@@ -1,0 +1,26 @@
+{
+  "name": "1252 to 1251",
+  "version": "0.1",
+  "description": "Расширение преобразовывает выделенную фразу из 1252 в 1251, например: \"äàëåå\" -> \"далее\" в редакторе TinyMCE. Горячая клавиша на маке: Ctrl+`, кастомизация только в коде :)",
+  "permissions": [
+    "<all_urls>",
+    "tts",
+    "tabs"
+  ],
+
+  "minimum_chrome_version": "14",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+
+  "manifest_version": 2
+}
